@@ -22,7 +22,7 @@ def facial_recognition(image1: str, image2: str, own_db: bool) -> None:
         return
 
     # Mostrar los resultados
-    print("Son la misma persona." if result["verified"] else "Persona distinta.")
+    print("Acceso permitido." if result["verified"] else "Acceso denegado.")
 
     # Verificar si la prediccion fue correcta
     if own_db:
